@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suleman Jaam | AI Engineer, Data Scientist & Full-Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Suleman Jaam - AI Engineer, Data Scientist, Full-Stack Developer, and E-Commerce Specialist. Discover projects in Machine Learning, AI Automation, Web Development, and Ecom Management.">
+    <meta name="keywords"
+        content="Suleman Jaam, AI Engineer, Data Scientist, Full Stack Developer, Ecom Specialist, Machine Learning, Shopify, Web Development, Portfolio">
+    <meta name="author" content="Suleman Jaam">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0c10">
+    <link rel="canonical" href="https://sulemanjaam.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sulemanjaam.com/">
+    <meta property="og:title" content="Suleman Jaam | AI Engineer & Full-Stack Developer">
+    <meta property="og:description"
+        content="Explore the portfolio of Suleman Jaam, featuring cutting-edge AI integrations, data analytics, full-stack platforms, and premium e-commerce solutions.">
+    <meta property="og:image" content="assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sulemanjaam.com/">
+    <meta property="twitter:title" content="Suleman Jaam | AI Engineer & Full-Stack Developer">
+    <meta property="twitter:description"
+        content="Explore the portfolio of Suleman Jaam, featuring cutting-edge AI integrations, data analytics, full-stack platforms, and premium e-commerce solutions.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Interactive Canvas Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Header / Navigation Bar -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                Suleman Jaam
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link active">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-container">
+                        <span class="pulse-dot"></span>
+                        <span class="badge-text">Available for Freelance & Remote Work</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Suleman Jaam</span>
+                    </h1>
+                    <div class="typewriter-container">
+                        <span class="static-txt">Specialist in</span>
+                        <span class="dynamic-txt" id="typewriter"></span>
+                        <span class="caret">&nbsp;</span>
+                    </div>
+                    <p class="hero-description">
+                        Computer Science student with hands-on expertise in Artificial Intelligence, Data Science,
+                        full-stack development, and e-commerce growth. I design intelligent, scalable solutions—from
+                        predictive machine learning and AI automation to high-converting online stores.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-gradient">
+                            <span>Explore Work</span>
+                            <i data-lucide="arrow-up-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Get In Touch</span>
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                    <div class="hero-platforms">
+                        <span class="platforms-label">Hire me directly on:</span>
+                        <div class="platforms-links">
+                            <a href="https://www.upwork.com/freelancers/~01e897d8dcd27469b6" target="_blank" rel="noopener noreferrer" class="platform-link upwork-link" aria-label="Upwork">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.5 13.9c-2.4 0-3.6-1.3-4.1-3.1h-.1c-.4 1.7-1.3 3.6-2.5 5.1l-1.9-2.5c1-1.3 1.7-3 2.1-4.8H8.8V4.3H6.5v4.3H4.1V4.3H1.8v8.6c0 2.4 1.8 4.3 4.1 4.3 1.9 0 3.6-1.4 4-3.2l1.6 2.1L9 19.3h2.7l1.7-5.3c1.1 1.7 2.6 2.8 4.6 2.8 2.6 0 4.6-2 4.6-4.6 0-2.6-2.1-4.6-4.6-4.6-1.5 0-2.8.7-3.7 1.8l-1.6-4.8h-2.5l2.4 7.4c.5-1.1 1.2-2.3 2.1-3.2h.1c1.2-1.3 2.9-2 4.6-2 2.6 0 4.6 2 4.6 4.6-.1 2.6-2.1 4.6-4.7 4.6zm0-7c1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4s-2.4-1.1-2.4-2.4c0-1.3 1.1-2.4 2.4-2.4z"/></svg>
+                            </a>
+                            <a href="https://www.fiverr.com/s/BRQNNjk" target="_blank" rel="noopener noreferrer" class="platform-link fiverr-link" aria-label="Fiverr">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22.4 6.7h-4.3v-2c0-.5.3-.8.7-.8h3.3V0h-3.5c-2.6 0-4.3 1.8-4.3 4.4v2.3H12v3.7h2.2v10.9h3.8V10.4h3.6V6.7h.8zM4.1 14.1h3.7v7.2H4.1v-7.2zm0-5.7h3.7v4.1H4.1V8.4zM3.9 6.8c1.3 0 2.4-1.1 2.4-2.5C6.3 3 5.3 1.9 4 1.9 2.7 1.9 1.6 3 1.6 4.3c0 1.4 1 2.5 2.3 2.5zm4.8 14.5v-7.2H12v7.2H8.7zM8.7 8.4h3.3v4.1H8.7V8.4z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Fade / Scroll indicator -->
+            <div class="scroll-down-indicator">
+                <a href="#about" aria-label="Scroll down">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About / Stats Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="grid-2-col">
+                    <div class="about-bio card glass-card">
+                        <div class="card-glow"></div>
+                        <h2 class="section-subtitle"><i data-lucide="user"></i> About Me</h2>
+                        <h3 class="about-headline">AI Engineer | Data Scientist | Web &amp; App Developer | E-commerce Specialist</h3>
+                        <p class="about-paragraph">
+                            I am a results-driven technology professional with 2+ years of hands-on experience building intelligent systems, data-driven platforms, and high-converting e-commerce stores. I combine deep expertise in AI and Machine Learning with practical full-stack engineering to deliver scalable, real-world solutions.
+                        </p>
+                        <p class="about-paragraph">
+                            From training predictive ML models and deploying AI automation pipelines to architecting full-stack web apps and managing multi-channel e-commerce operations on Shopify, Etsy, Amazon, and eBay — I bring end-to-end technical ownership to every project.
+                        </p>
+                        <div class="meta-info-grid">
+                            <div class="meta-item">
+                                <span class="meta-label">Location</span>
+                                <span class="meta-value">Multan, Pakistan</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Experience</span>
+                                <span class="meta-value">2+ Years</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Availability</span>
+                                <span class="meta-value">Freelance &amp; Remote</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Email</span>
+                                <span class="meta-value">sulemanjaam.digital@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats-grid">
+                        <div class="stat-card card glass-card">
+                            <div class="stat-icon-wrapper blue">
+                                <i data-lucide="folder-check"></i>
+                            </div>
+                            <h4 class="stat-number">10+</h4>
+                            <p class="stat-desc">Projects Delivered</p>
+                        </div>
+                        <div class="stat-card card glass-card">
+                            <div class="stat-icon-wrapper green">
+                                <i data-lucide="briefcase"></i>
+                            </div>
+                            <h4 class="stat-number">2+</h4>
+                            <p class="stat-desc">Years of Experience</p>
+                        </div>
+                        <div class="stat-card card glass-card">
+                            <div class="stat-icon-wrapper violet">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <h4 class="stat-number">24/7</h4>
+                            <p class="stat-desc">Automated System Uptime</p>
+                        </div>
+                        <div class="stat-card card glass-card">
+                            <div class="stat-icon-wrapper violet">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <h4 class="stat-number">5+</h4>
+                            <p class="stat-desc">Global Markets Served</p>
+                        </div>
+                        <div class="stat-card card glass-card">
+                            <div class="stat-icon-wrapper violet">
+                                <i data-lucide="star"></i>
+                            </div>
+                            <h4 class="stat-number">4.8★</h4>
+                            <p class="stat-desc">Average Review Rating</p>
+                        </div>
+                        <div class="stat-card card glass-card">
+                            <div class="stat-icon-wrapper orange">
+                                <i data-lucide="percent"></i>
+                            </div>
+                            <h4 class="stat-number">98%</h4>
+                            <p class="stat-desc">Client Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-lead">A comprehensive toolkit spanning Artificial Intelligence, Web Development,
+                        and E-commerce operations.</p>
+                </div>
+
+                <div class="skills-tabs-container">
+                    <div class="skills-tabs" role="tablist">
+                        <button class="tab-btn active" role="tab" aria-selected="true" data-tab="ai">
+                            <i data-lucide="brain"></i> Artificial Intelligence
+                        </button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="ds">
+                            <i data-lucide="bar-chart-2"></i> Data Science
+                        </button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="web">
+                            <i data-lucide="code-2"></i> Web Dev
+                        </button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="app">
+                            <i data-lucide="smartphone"></i> App Dev
+                        </button>
+                        <button class="tab-btn" role="tab" aria-selected="false" data-tab="ecom">
+                            <i data-lucide="shopping-cart"></i> E-commerce
+                        </button>
+                    </div>
+
+                    <div class="skills-content-panel">
+                        <!-- AI Tab Content -->
+                        <div class="tab-panel active" id="ai-panel" role="tabpanel">
+                            <div class="panel-grid">
+                                <div class="panel-info">
+                                    <h3>Artificial Intelligence & Automation</h3>
+                                    <p>Building intelligent systems that learn, optimize, and automate repetitive tasks
+                                        using state-of-the-art models and custom pipelines.</p>
+                                </div>
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <span class="skill-name">Machine Learning</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Deep Learning</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">NLP / LLMs (OpenAI & Gemini APIs)</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Computer Vision</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">AI Automation Workflows</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Data Science Tab Content -->
+                        <div class="tab-panel" id="ds-panel" role="tabpanel">
+                            <div class="panel-grid">
+                                <div class="panel-info">
+                                    <h3>Data Science & Analytics</h3>
+                                    <p>Translating raw complex data structures into actionable visual insights and
+                                        predictive statistical frameworks to fuel data-driven decisions.</p>
+                                </div>
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <span class="skill-name">Python & Pandas</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Data Visualization (Matplotlib, Seaborn)</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Statistical Analysis & Modeling</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Power BI & Tableau Dashboarding</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Big Data processing (Spark)</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Web Dev Tab Content -->
+                        <div class="tab-panel" id="web-panel" role="tabpanel">
+                            <div class="panel-grid">
+                                <div class="panel-info">
+                                    <h3>Full-Stack Web Development</h3>
+                                    <p>Architecting secure, highly optimized, and modular backends combined with
+                                        responsive, dynamic, and fluid client-side interfaces.</p>
+                                </div>
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <span class="skill-name">React / Next.js Frameworks</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Node.js / Express Backend</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Django / Flask (Python)</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">RESTful & GraphQL APIs</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">HTML5 / CSS3 / Vanilla Javascript</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- App Dev Tab Content -->
+                        <div class="tab-panel" id="app-panel" role="tabpanel">
+                            <div class="panel-grid">
+                                <div class="panel-info">
+                                    <h3>Mobile Application Development</h3>
+                                    <p>Creating beautiful, fast, and feature-rich cross-platform applications optimized
+                                        for native iOS and Android experience.</p>
+                                </div>
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <span class="skill-name">Flutter (Dart)</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">React Native</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Firebase Backend Integration</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Store Deployments (Play Store / App Store)</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ecom Tab Content -->
+                        <div class="tab-panel" id="ecom-panel" role="tabpanel">
+                            <div class="panel-grid">
+                                <div class="panel-info">
+                                    <h3>E-commerce Solutions & Operations</h3>
+                                    <p>Deploying, scaling, and managing e-commerce businesses on major global platforms,
+                                        specializing in storefront design, optimization, and marketing analytics.</p>
+                                </div>
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <span class="skill-name">Shopify & WooCommerce Store Design</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Etsy, Amazon, & eBay Store Operations</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Product Hunting & Listing Optimization</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Payment Gateway Integration & SEO Setup</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-card">
+                                        <span class="skill-name">Store Account Management</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline / Certifications Section -->
+        <section class="certifications-section" id="certifications">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Certifications & Milestones</h2>
+                    <p class="section-lead">A trajectory of ongoing learning and verified expertise from leading global
+                        institutions.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Line -->
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2026</span>
+                            <h3 class="timeline-title">Ecom Virtual Assistant</h3>
+                            <span class="timeline-org">The H University</span>
+                            <p class="timeline-text">Comprehensive validation of E-commerce operations, store
+                                management, listing, cross-border payments, and multi-channel SEO optimization.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2025</span>
+                            <h3 class="timeline-title">Google Data Analytics Professional</h3>
+                            <span class="timeline-org">Google / Coursera</span>
+                            <p class="timeline-text">Rigorous training covering data cleaning, analysis, SQL, R
+                                programming, Tableau visualizations, and data-driven decision making frameworks.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2024</span>
+                            <h3 class="timeline-title">Machine Learning Specialization</h3>
+                            <span class="timeline-org">Coursera — Stanford University</span>
+                            <p class="timeline-text">Instructed by Andrew Ng. Covered core ML foundations, supervised
+                                learning, neural networks, decision trees, unsupervised learning, and practical
+                                recommender system implementation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2024</span>
+                            <h3 class="timeline-title">Full-Stack Web Development</h3>
+                            <span class="timeline-org">freeCodeCamp</span>
+                            <p class="timeline-text">Project-based curriculum covering semantic HTML5, CSS3 responsive
+                                grid/flexbox, API integrations, Javascript algorithms, and modern front-end application
+                                architecture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Selected Projects</h2>
+                    <p class="section-lead">A gallery of systems built at the intersection of AI, Web Development, and
+                        E-commerce.</p>
+
+                    <!-- Projects Filter Bar -->
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="ai">AI & Automation</button>
+                        <button class="filter-btn" data-filter="web">Web & App Dev</button>
+                        <button class="filter-btn" data-filter="ecom">E-commerce</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card glass-card" data-category="ecom">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#contact" class="project-link-icon" aria-label="Request Demo">
+                                        <i data-lucide="eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Styled Placeholder or visual card shape -->
+                            <div class="project-placeholder ecom-bg">
+                                <i data-lucide="shopping-bag" class="placeholder-icon"></i>
+                                <span>E-Commerce Platform</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-tag">E-commerce</span>
+                            <h3 class="project-title">High-Converting E-Commerce Store</h3>
+                            <p class="project-description">A fully optimized WooCommerce/Shopify integration managing
+                                custom product listings, automated inventory updates, payment gateways, and tailored SEO
+                                schema.</p>
+                            <div class="project-tech">
+                                <span>Shopify</span>
+                                <span>WooCommerce</span>
+                                <span>SEO</span>
+                                <span>Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card glass-card" data-category="ai">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#contact" class="project-link-icon" aria-label="Request Demo">
+                                        <i data-lucide="eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder ai-bg">
+                                <i data-lucide="languages" class="placeholder-icon"></i>
+                                <span>AI Image Translator</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-tag">Artificial Intelligence</span>
+                            <h3 class="project-title">AI-Based Image Translation Pipeline</h3>
+                            <p class="project-description">End-to-end intelligent pipeline that automatically extracts
+                                text from input images, processes target translation, and fits text back while
+                                maintaining visual background consistency.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Computer Vision</span>
+                                <span>NLP</span>
+                                <span>Gemini API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card glass-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#contact" class="project-link-icon" aria-label="Request Demo">
+                                        <i data-lucide="eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder web-bg">
+                                <i data-lucide="panels-top-left" class="placeholder-icon"></i>
+                                <span>Full Stack Web App</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-tag">Web Development</span>
+                            <h3 class="project-title">Responsive Portfolio Platform</h3>
+                            <p class="project-description">High-performance custom web platform engineered for loading
+                                speeds and dynamic user interactions, featuring canvas animation libraries and search
+                                indexes.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>ES6 JS</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Let's Collaborate</h2>
+                    <p class="section-lead">Have an idea, project, or custom integration? Send me a message and let's
+                        construct it together.</p>
+                </div>
+
+                <div class="contact-layout">
+                    <div class="contact-info-block glass-card">
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <div class="method-icon-box">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Email</span>
+                                    <a href="mailto:sulemanjaam.digital@gmail.com"
+                                        class="method-link">sulemanjaam.digital@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-icon-box">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Phone</span>
+                                    <a href="tel:+923079951055" class="method-link">+92 307 9951055</a>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-icon-box">
+                                    <i data-lucide="linkedin"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">LinkedIn</span>
+                                    <a href="https://linkedin.com/in/suleman-jaam" target="_blank"
+                                        rel="noopener noreferrer" class="method-link">linkedin.com/in/suleman-jaam</a>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-icon-box">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Location</span>
+                                    <span class="method-link">Multan, Punjab, Pakistan</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hire Me Platforms -->
+                        <div class="hire-me-platforms">
+                            <h4 class="social-handles-title">Hire Me Directly</h4>
+                            <div class="hire-me-grid">
+                                <a href="https://www.upwork.com/freelancers/~01e897d8dcd27469b6" target="_blank" rel="noopener noreferrer" class="hire-me-btn upwork-btn">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.5 13.9c-2.4 0-3.6-1.3-4.1-3.1h-.1c-.4 1.7-1.3 3.6-2.5 5.1l-1.9-2.5c1-1.3 1.7-3 2.1-4.8H8.8V4.3H6.5v4.3H4.1V4.3H1.8v8.6c0 2.4 1.8 4.3 4.1 4.3 1.9 0 3.6-1.4 4-3.2l1.6 2.1L9 19.3h2.7l1.7-5.3c1.1 1.7 2.6 2.8 4.6 2.8 2.6 0 4.6-2 4.6-4.6 0-2.6-2.1-4.6-4.6-4.6-1.5 0-2.8.7-3.7 1.8l-1.6-4.8h-2.5l2.4 7.4c.5-1.1 1.2-2.3 2.1-3.2h.1c1.2-1.3 2.9-2 4.6-2 2.6 0 4.6 2 4.6 4.6-.1 2.6-2.1 4.6-4.7 4.6zm0-7c1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4s-2.4-1.1-2.4-2.4c0-1.3 1.1-2.4 2.4-2.4z"/></svg>
+                                    <span>Upwork Profile</span>
+                                </a>
+                                <a href="https://www.fiverr.com/s/BRQNNjk" target="_blank" rel="noopener noreferrer" class="hire-me-btn fiverr-btn">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22.4 6.7h-4.3v-2c0-.5.3-.8.7-.8h3.3V0h-3.5c-2.6 0-4.3 1.8-4.3 4.4v2.3H12v3.7h2.2v10.9h3.8V10.4h3.6V6.7h.8zM4.1 14.1h3.7v7.2H4.1v-7.2zm0-5.7h3.7v4.1H4.1V8.4zM3.9 6.8c1.3 0 2.4-1.1 2.4-2.5C6.3 3 5.3 1.9 4 1.9 2.7 1.9 1.6 3 1.6 4.3c0 1.4 1 2.5 2.3 2.5zm4.8 14.5v-7.2H12v7.2H8.7zM8.7 8.4h3.3v4.1H8.7V8.4z"/></svg>
+                                    <span>Fiverr Profile</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Social Handles -->
+                        <div class="social-handles">
+                            <h4 class="social-handles-title">Follow Me</h4>
+                            <div class="social-handles-grid">
+                                <a href="https://linkedin.com/in/suleman-jaam" target="_blank"
+                                    rel="noopener noreferrer" class="social-handle-item span-2" aria-label="LinkedIn">
+                                    <div class="social-icon-box linkedin-color">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            width="18" height="18">
+                                            <path
+                                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                        </svg>
+                                    </div>
+                                    <span>suleman-jaam</span>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=61578610340045" target="_blank"
+                                    rel="noopener noreferrer" class="social-handle-item" aria-label="Facebook">
+                                    <div class="social-icon-box facebook-color">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            width="18" height="18">
+                                            <path
+                                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                        </svg>
+                                    </div>
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="https://www.instagram.com/sulemanjaam.official" target="_blank"
+                                    rel="noopener noreferrer" class="social-handle-item" aria-label="Instagram">
+                                    <div class="social-icon-box instagram-color">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            width="18" height="18">
+                                            <path
+                                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                                        </svg>
+                                    </div>
+                                    <span>sulemanjaam.official</span>
+                                </a>
+                                <a href="https://www.tiktok.com/@suleman.jaam" target="_blank" rel="noopener noreferrer"
+                                    class="social-handle-item" aria-label="TikTok">
+                                    <div class="social-icon-box tiktok-color">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            width="18" height="18">
+                                            <path
+                                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z" />
+                                        </svg>
+                                    </div>
+                                    <span>suleman.jaam</span>
+                                </a>
+                                <a href="https://x.com/suleman_jaam" target="_blank" rel="noopener noreferrer"
+                                    class="social-handle-item" aria-label="X / Twitter">
+                                    <div class="social-icon-box x-color">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            width="18" height="18">
+                                            <path
+                                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.741l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63Zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                        </svg>
+                                    </div>
+                                    <span>suleman_jaam</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-block glass-card">
+                        <div class="form-header" style="margin-bottom: 30px;">
+                            <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 12px;">Let's Collaborate</h3>
+                            <p style="color: var(--text-secondary); margin-bottom: 0;"><strong>Connect With Me</strong><br>I am available for technical consulting, custom development roles, and full store management contracts.</p>
+                        </div>
+                        <form id="portfolio-contact-form" action="#" method="POST">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email</label>
+                                    <input type="email" id="form-email" name="email" required
+                                        placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" name="subject" required
+                                    placeholder="Project Collaboration">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" name="message" rows="5" required
+                                    placeholder="Describe your project requirements here..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-gradient btn-full">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Suleman Jaam. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#projects">Projects</a>
+            </div>
+            <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to Top">
+                <i data-lucide="arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- JS Application Logic -->
+    <script src="app.js"></script>
+</body>
+
+</html>
